@@ -1,0 +1,727 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --saffron: #d35400;
+    --dark-red: #7b1e10;
+    --deep-red: #5b140c;
+    --gold: #e9a23b;
+    --cream: #fff8ed;
+    --light-orange: #fff0d5;
+    --text: #3b1a12;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Georgia,
+        "Noto Serif Devanagari",
+        serif;
+
+    color: var(--text);
+
+    background:
+        radial-gradient(
+            circle at top,
+            #fff3df,
+            #f9d7a5 45%,
+            #d98b45 100%
+        );
+}
+
+
+/* App */
+
+.app {
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 20px 16px 40px;
+}
+
+
+/* Header */
+
+.header {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.om {
+    font-size: 42px;
+
+    color: var(--dark-red);
+
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    font-size: 30px;
+
+    color: var(--dark-red);
+}
+
+.header p {
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    color: #8a3b1e;
+}
+
+
+/* Day */
+
+.day-section {
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.day-label {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #8a3b1e;
+}
+
+.day-number {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: var(--dark-red);
+}
+
+
+/* Hanuman */
+
+.hanuman-container {
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+
+.hanuman-button {
+    border: none;
+
+    padding: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+}
+
+.hanuman-image {
+    width: min(82vw, 330px);
+
+    height: min(82vw, 330px);
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #e7a13b;
+
+    box-shadow:
+        0 10px 30px rgba(90, 30, 5, 0.25);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.hanuman-button:hover .hanuman-image {
+    transform: scale(1.02);
+}
+
+.hanuman-button:active .hanuman-image {
+    transform: scale(0.95);
+}
+
+.tap-text {
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: #7d3920;
+}
+
+
+/* Mantra */
+
+.mantra-card {
+    padding: 20px 16px;
+
+    text-align: center;
+
+    background: rgba(255, 248, 237, 0.9);
+
+    border: 1px solid #e5aa5e;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 18px rgba(91, 20, 12, 0.1);
+
+    margin-bottom: 20px;
+}
+
+.mantra-sanskrit {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    font-weight: bold;
+
+    color: var(--dark-red);
+}
+
+.mantra-transliteration {
+    margin-top: 12px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #8a4b30;
+}
+
+
+/* Counter */
+
+.counter-section {
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+.count {
+    display: inline-block;
+
+    font-size: 58px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    color: var(--dark-red);
+}
+
+.count-total {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    font-size: 22px;
+
+    color: #98502e;
+}
+
+.progress-container {
+    width: 100%;
+
+    height: 10px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    background: #e9c79d;
+
+    border-radius: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b93617,
+            #e89b28
+        );
+
+    border-radius: 20px;
+
+    transition: width 0.25s ease;
+}
+
+.percentage {
+    margin-top: 7px;
+
+    font-size: 13px;
+
+    color: #874329;
+}
+
+
+/* Main button */
+
+.chant-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    min-height: 62px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9c2813,
+            #d35400
+        );
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 0 #68180d;
+
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+.chant-button:active {
+    transform: translateY(5px);
+
+    box-shadow:
+        0 1px 0 #68180d;
+}
+
+.chant-button:disabled {
+    opacity: 0.55;
+
+    cursor: not-allowed;
+}
+
+
+/* Reset */
+
+.reset-button {
+    display: block;
+
+    margin: 16px auto;
+
+    padding: 10px 22px;
+
+    border: 1px solid #a94527;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #8b2c17;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* Completion */
+
+.completion {
+    text-align: center;
+
+    padding: 22px;
+
+    margin-top: 20px;
+
+    background: #fff1cf;
+
+    border: 1px solid #e5a34d;
+
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.completion-icon,
+.final-icon {
+    font-size: 42px;
+}
+
+.completion h2 {
+    margin: 8px 0;
+
+    color: var(--dark-red);
+}
+
+.completion p {
+    margin-bottom: 15px;
+}
+
+.next-day-button {
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background: var(--dark-red);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Overall */
+
+.overall-card {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: rgba(255, 248, 237, 0.92);
+
+    border-radius: 20px;
+
+    border: 1px solid #dfaa61;
+}
+
+.overall-card h2 {
+    font-size: 19px;
+
+    color: var(--dark-red);
+
+    margin-bottom: 12px;
+}
+
+.total-progress {
+    font-size: 26px;
+
+    color: var(--dark-red);
+}
+
+.total-progress span {
+    font-size: 16px;
+
+    color: #895038;
+}
+
+.overall-progress-container {
+    height: 9px;
+
+    margin-top: 12px;
+
+    background: #e8c99e;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.overall-progress {
+    height: 100%;
+
+    width: 0%;
+
+    background: #d35400;
+
+    transition: width 0.3s ease;
+}
+
+.overall-card p {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #8c4a31;
+}
+
+
+/* Days */
+
+.days-section {
+    margin-top: 25px;
+}
+
+.days-section h2 {
+    text-align: center;
+
+    color: var(--dark-red);
+
+    margin-bottom: 14px;
+}
+
+.days-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 9px;
+}
+
+.day-card {
+    padding: 12px 5px;
+
+    text-align: center;
+
+    border-radius: 14px;
+
+    background: #fff3df;
+
+    border: 1px solid #e3bd89;
+
+    color: #6c351f;
+}
+
+.day-card strong {
+    display: block;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.day-card span {
+    font-size: 11px;
+}
+
+.day-card.completed {
+    background: #f8d48f;
+
+    border-color: #c97922;
+
+    color: #6b240e;
+}
+
+.day-card.current {
+    border: 2px solid var(--dark-red);
+}
+
+.day-card.locked {
+    opacity: 0.45;
+}
+
+
+/* Final */
+
+.final-completion {
+    margin-top: 25px;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0c7,
+            #ffd98d
+        );
+
+    border-radius: 22px;
+
+    border: 2px solid #d58a27;
+}
+
+.final-completion h2 {
+    margin: 8px 0;
+
+    color: var(--dark-red);
+}
+
+.final-completion p {
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.jai {
+    font-weight: bold;
+
+    color: #8b2915;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #7d4028;
+
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 400px) {
+
+    .app {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .mantra-sanskrit {
+        font-size: 18px;
+    }
+
+    .days-grid {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+}
+
+.day-start-button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 9px;
+
+    padding: 8px 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8b1e0e;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.day-start-button:hover {
+    background: #a52a16;
+}
+
+.later-button {
+    display: block;
+
+    margin: 10px auto 0;
+
+    padding: 10px 22px;
+
+    border: 1px solid #a94527;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #8b2c17;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.completion-actions {
+    margin-top: 15px;
+}
+
+
+.day-start-button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #8b1e0e;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.day-start-button:hover {
+    background: #a52a16;
+}
+
+/* Speaker button */
+
+.app {
+    position: relative;
+}
+
+.sound-button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid #d59a52;
+    border-radius: 50%;
+
+    background: rgba(255, 248, 237, 0.95);
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 3px 10px rgba(91, 20, 12, 0.15);
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.sound-button:hover {
+    transform: scale(1.05);
+}
+
+.sound-button:active {
+    transform: scale(0.94);
+}
+
+.sound-button.muted {
+    opacity: 0.7;
+}

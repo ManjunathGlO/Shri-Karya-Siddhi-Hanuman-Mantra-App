@@ -13,6 +13,32 @@ The app allows devotees to chant the prescribed Hanuman mantra **108 times each 
 > **hanuman! yatnamāsthāya**
 > **duḥkhakṣaya karo bhava**
 
+## ಶ್ರೀ ಕಾರ್ಯಸಿದ್ಧಿ ಅಂಜನೇಯ ಮಂತ್ರ
+
+```mantra
+ತ್ವಮಸ್ಮಿನ್ ಕಾರ್ಯನಿಯೋಗೇ
+ಪ್ರಮಾಣಂ ಹರಿಸತ್ತಮ
+
+ಹನುಮನ್! ಯತ್ನಮಾಸ್ಥಾಯ
+ದುಃಖಕ್ಷಯಕರೋ ಭವ
+```
+
+## Sri Karyasiddhi Anjaneya Mantra
+
+```mantra
+“Tvamasmin Kārya Niryoge Pramānam Hari Sattama
+Hanuman Yatna Māsthāya Dukha Kshaya Karo Bhava”
+
+“Tvamasmin Kārya Niryoge Pramānam Hari Sattama
+Rāghavastvatsamārambhāt Mayi Yatnaparo Bhavet”
+```
+### त्वमस्मिन् कार्यनियोगे
+```mantra
+त्वमस्मिन् कार्यनियोगे प्रमाणं हरिसत्तम ।
+                
+                हनुमन्! यत्नमास्थाय दुःखक्षय करो भव ॥
+```
+
 ### Features
 
 * 🙏 108 mantra repetitions per day

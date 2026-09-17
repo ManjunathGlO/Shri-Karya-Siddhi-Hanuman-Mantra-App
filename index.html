@@ -1,27 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-        name="theme-color"
-        content="#8b1e0e"
-    >
+    <meta name="theme-color" content="#8b1e0e" />
 
     <title>Hanuman Ji 108 Mantra Jaap</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JF8E38TD2G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-JF8E38TD2G");
+    </script>
+    <!-- End Google Analytics -->
+  </head>
 
+  <body>
     <main class="app">
-<!-- 
+      <!-- 
         <button
     id="soundButton"
     class="sound-button"
@@ -31,145 +39,91 @@
     🔊
 </button> -->
 
-<button
-    id="soundButton"
-    class="sound-button"
-    type="button"
-    aria-label="Play mantra"
->
-    🔊
-</button>
+      <button
+        id="soundButton"
+        class="sound-button"
+        type="button"
+        aria-label="Play mantra"
+      >
+        🔊
+      </button>
 
-<audio id="mantraAudio" preload="auto">
-    <source src="audio/mantra.mp3" type="audio/mpeg">
-</audio>
+      <audio id="mantraAudio" preload="auto">
+        <source src="audio/mantra.mp3" type="audio/mpeg" />
+      </audio>
 
-        <!-- Header -->
-        <header class="header">
+      <!-- Header -->
+      <header class="header">
+        <div class="om">ॐ</div>
 
-            <div class="om">ॐ</div>
+        <!-- <h1>श्री हनुमान जी</h1> -->
+        <h1>श्री कार्य सिद्धि अंजनेय</h1>
 
-            <!-- <h1>श्री हनुमान जी</h1> -->
-            <h1>श्री कार्य सिद्धि अंजनेय </h1>  
+        <p>108 मंत्र जाप</p>
+      </header>
 
-            <p>108 मंत्र जाप</p>
+      <!-- Day -->
+      <section class="day-section">
+        <div class="day-label">DAY</div>
 
-        </header>
+        <div id="dayNumber" class="day-number">1</div>
+      </section>
 
-
-        <!-- Day -->
-        <section class="day-section">
-
-            <div class="day-label">
-                DAY
-            </div>
-
-            <div id="dayNumber" class="day-number">
-                1
-            </div>
-
-        </section>
-
-
-        <!-- Hanuman Image -->
-        <section class="hanuman-container">
-
-            <button
-                id="chantImage"
-                class="hanuman-button"
-                aria-label="Chant mantra"
-            >
-
-                <img
-                    src="images/hanuman.png"
-                    alt="Hanuman Ji"
-                    class="hanuman-image"
-                >
-
-            </button>
-
-            <p class="tap-text">
-                Tap Hanuman Ji to chant
-            </p>
-
-        </section>
-
-
-        <!-- Mantra -->
-        <section class="mantra-card">
-
-            <div class="mantra-sanskrit">
-
-                त्वमस्मिन् कार्यनियोगे प्रमाणं हरिसत्तम ।
-                <br>
-                हनुमन्! यत्नमास्थाय दुःखक्षय करो भव ॥
-
-            </div>
-
-            <div class="mantra-transliteration">
-
-                Tvamasmin kāryaniyōgē pramāṇaṃ harisattama
-                <br>
-                Hanuman! yatnamāsthāya duḥkhakṣaya karo bhava
-
-            </div>
-
-        </section>
-
-
-        <!-- Counter -->
-        <section class="counter-section">
-
-            <div id="count" class="count">
-                0
-            </div>
-
-            <div class="count-total">
-                / 108
-            </div>
-
-            <div class="progress-container">
-
-                <div
-                    id="progressBar"
-                    class="progress-bar"
-                ></div>
-
-            </div>
-
-            <div id="percentage" class="percentage">
-                0%
-            </div>
-
-        </section>
-
-
-
-
-        <!-- Chant Button -->
+      <!-- Hanuman Image -->
+      <section class="hanuman-container">
         <button
-            id="chantButton"
-            class="chant-button"
+          id="chantImage"
+          class="hanuman-button"
+          aria-label="Chant mantra"
         >
-
-            🙏
-            <span>JAP</span>
-
+          <img
+            src="images/hanuman.png"
+            alt="Hanuman Ji"
+            class="hanuman-image"
+          />
         </button>
 
+        <p class="tap-text">Tap Hanuman Ji to chant</p>
+      </section>
 
-        <!-- Reset -->
-        <button
-            id="resetButton"
-            class="reset-button"
-        >
+      <!-- Mantra -->
+      <section class="mantra-card">
+        <div class="mantra-sanskrit">
+          त्वमस्मिन् कार्यनियोगे प्रमाणं हरिसत्तम ।
+          <br />
+          हनुमन्! यत्नमास्थाय दुःखक्षय करो भव ॥
+        </div>
 
-            ↻ Reset Today
+        <div class="mantra-transliteration">
+          Tvamasmin kāryaniyōgē pramāṇaṃ harisattama
+          <br />
+          Hanuman! yatnamāsthāya duḥkhakṣaya karo bhava
+        </div>
+      </section>
 
-        </button>
+      <!-- Counter -->
+      <section class="counter-section">
+        <div id="count" class="count">0</div>
 
+        <div class="count-total">/ 108</div>
 
-        <!-- Completion Message
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <div id="percentage" class="percentage">0%</div>
+      </section>
+
+      <!-- Chant Button -->
+      <button id="chantButton" class="chant-button">
+        🙏
+        <span>JAP</span>
+      </button>
+
+      <!-- Reset -->
+      <button id="resetButton" class="reset-button">↻ Reset Today</button>
+
+      <!-- Completion Message
         <section
             id="completion"
             class="completion hidden"
@@ -196,98 +150,52 @@
 
         </section> -->
 
+      <section id="completion" class="completion hidden">
+        <div class="completion-icon">🚩</div>
 
-        <section id="completion" class="completion hidden">
+        <h2 id="completionTitle">108 मंत्र जाप पूर्ण!</h2>
 
-    <div class="completion-icon">
-        🚩
-    </div>
+        <p>🙏 जय श्री राम 🙏</p>
 
-    <h2 id="completionTitle">
-        108 मंत्र जाप पूर्ण!
-    </h2>
+        <p id="nextDayQuestion" class="next-day-question">
+          Are you ready to begin the next day?
+        </p>
 
-    <p>
-        🙏 जय श्री राम 🙏
-    </p>
-
-    <p id="nextDayQuestion" class="next-day-question">
-        Are you ready to begin the next day?
-    </p>
-
-    <div class="completion-actions">
-
-        <button
-            id="nextDayButton"
-            class="next-day-button"
-        >
+        <div class="completion-actions">
+          <button id="nextDayButton" class="next-day-button">
             Yes, Start Next Day
-        </button>
+          </button>
 
-        <button
-            id="laterButton"
-            class="later-button"
-        >
-            Not Now
-        </button>
+          <button id="laterButton" class="later-button">Not Now</button>
+        </div>
+      </section>
 
-    </div>
+      <!-- Overall Progress -->
+      <section class="overall-card">
+        <h2>📿 16 दिन का संकल्प</h2>
 
-</section>
+        <div class="total-progress">
+          <strong id="totalCount"> 0 </strong>
 
+          <span> / 1,728 </span>
+        </div>
 
-        <!-- Overall Progress -->
-        <section class="overall-card">
+        <div class="overall-progress-container">
+          <div id="overallProgress" class="overall-progress"></div>
+        </div>
 
-            <h2>
-                📿 16 दिन का संकल्प
-            </h2>
+        <p id="overallPercentage">0% completed</p>
+      </section>
 
-            <div class="total-progress">
+      <!-- Days -->
+      <section class="days-section">
+        <h2>16 Days Progress</h2>
 
-                <strong id="totalCount">
-                    0
-                </strong>
+        <div id="daysGrid" class="days-grid"></div>
+      </section>
 
-                <span>
-                    / 1,728
-                </span>
-
-            </div>
-
-            <div class="overall-progress-container">
-
-                <div
-                    id="overallProgress"
-                    class="overall-progress"
-                ></div>
-
-            </div>
-
-            <p id="overallPercentage">
-                0% completed
-            </p>
-
-        </section>
-
-
-        <!-- Days -->
-        <section class="days-section">
-
-            <h2>
-                16 Days Progress
-            </h2>
-
-            <div
-                id="daysGrid"
-                class="days-grid"
-            ></div>
-
-        </section>
-
-
-        <!-- Final Completion -->
-        <!-- <section
+      <!-- Final Completion -->
+      <!-- <section
             id="finalCompletion"
             class="final-completion hidden"
         >
@@ -310,48 +218,25 @@
 
         </section> -->
 
-<section
-    id="finalCompletion"
-    class="final-completion hidden"
->
-    <div class="final-icon">
-        🚩
-    </div>
+      <section id="finalCompletion" class="final-completion hidden">
+        <div class="final-icon">🚩</div>
 
-    <h2>
-        16 Days Completed!
-    </h2>
+        <h2>16 Days Completed!</h2>
 
-    <p>
-        1,728 मंत्र जाप पूर्ण
-    </p>
+        <p>1,728 मंत्र जाप पूर्ण</p>
 
-    <div class="jai">
-        🙏 जय बजरंगबली 🙏
-    </div>
+        <div class="jai">🙏 जय बजरंगबली 🙏</div>
 
-    <button
-        id="newSankalpButton"
-        class="new-sankalp-button"
-        type="button"
-    >
-        🔄 Start New 16-Day Sankalp
-    </button>
-</section>
+        <button id="newSankalpButton" class="new-sankalp-button" type="button">
+          🔄 Start New 16-Day Sankalp
+        </button>
+      </section>
 
-        
-        <footer>
-
-            <p>
-                ॥ श्री राम जय राम जय जय राम ॥
-            </p>
-
-        </footer>
-
+      <footer>
+        <p>॥ श्री राम जय राम जय जय राम ॥</p>
+      </footer>
     </main>
 
-
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
